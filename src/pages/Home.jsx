@@ -233,9 +233,9 @@ export default function Home() {
       <section className="py-20 bg-gradient-to-br from-slate-900 to-slate-800">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
-            <Badge className="mb-4 bg-amber-500/10 text-amber-400 border-amber-500/20">Sell on H-Autos</Badge>
+            <Badge className="mb-4 bg-amber-500/10 text-amber-400 border-amber-500/20">Sell on HP Autos</Badge>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Want to List Your Car?</h2>
-            <p className="text-xl text-slate-300 max-w-xl mx-auto">All listings are posted by HSPR TECH — maximum trust for buyers worldwide.</p>
+            <p className="text-xl text-slate-300 max-w-xl mx-auto">All listings are posted by HSPR TECHNOLOGIES — maximum trust for buyers worldwide.</p>
           </div>
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <Card className="bg-white/5 border-white/10 text-white">
@@ -266,7 +266,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { icon: Shield,    title: 'Admin-Controlled',    desc: 'Every listing on H-Autos is posted and verified by admin. No fake listings, no scams.' },
+              { icon: Shield,    title: 'Admin-Controlled',    desc: 'Every listing on HP Autos is posted and verified by HSPR TECHNOLOGIES. No fake listings, no scams.' },
               { icon: Globe,     title: '13 Countries',        desc: 'From Nigeria to Japan, USA to UAE — one marketplace, global reach.' },
               { icon: Building2, title: 'RC-Verified Stores',  desc: 'Dealerships verified by RC number. Investor-grade trust for every store on the platform.' },
             ].map((item, i) => (
