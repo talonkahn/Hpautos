@@ -1,10 +1,14 @@
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useAuth } from '@/lib/AuthContext';
 
-// SellCar is now handled by admin only.
-// Users are redirected to BecomeSeller to subscribe.
 export default function SellCar() {
+  const { isAdmin, isLoading } = useAuth();
   const navigate = useNavigate();
-  useEffect(() => { navigate('/BecomeSeller', { replace: true }); }, []);
+  useEffect(() => {
+    if (isLoading) return;
+    if (isAdmin) navigate('/AdminDashboard', { replace: true });
+    else navigate('/BecomeSeller', { replace: true });
+  }, [isAdmin, isLoading]);
   return null;
 }
